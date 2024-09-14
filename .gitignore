@@ -4,3 +4,24 @@ __pycache__/
 fileuploader-backend/db.sqlite3
 fileuploader-backend/media/
 .venv
+# dependencies
+fileuploader-frontend/node_modules/
+fileuploader-frontend/.pnp
+fileuploader-frontend/.pnp.js
+
+# testing
+fileuploader-frontend/coverage/
+
+# production
+fileuploader-frontend/build/
+
+# misc
+fileuploader-frontend/.DS_Store
+fileuploader-frontend/.env.local
+fileuploader-frontend/.env.development.local
+fileuploader-frontend/.env.test.local
+fileuploader-frontend/.env.production.local
+
+fileuploader-frontend/npm-debug.log*
+fileuploader-frontend/yarn-debug.log*
+fileuploader-frontend/yarn-error.log*
