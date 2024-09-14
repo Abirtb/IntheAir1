@@ -1,0 +1,6 @@
+# General
+*.pyc
+__pycache__/
+fileuploader-backend/db.sqlite3
+fileuploader-backend/media/
+.venv
