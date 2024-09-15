@@ -1,0 +1,32 @@
+services:
+  
+  backend:
+    build:
+      context: ./fileuploader-backend
+    image: fileuploader-backend  # Naming the image after build
+    volumes:
+      - fileuploader-backend:/app
+    ports:
+      - "8000:8000"
+    networks:
+      - link-network
+
+
+  frontend:
+    build:
+      context: ./fileuploader-frontend
+    image: fileuploader-frontend  # Naming the image after build
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - link-network
+
+networks:
+  link-network:
+    driver: bridge
+
+volumes:
+  fileuploader-backend:
+    driver: local
