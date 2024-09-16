@@ -30,7 +30,7 @@ To run the entire application using Docker, follow these steps:
 
 1. Ensure Docker is installed and running on your machine.
 2. Navigate to the root directory of the project.
-3. Build and start the Docker containers: `docker-compose up --build`
+3. Build and start the Docker containers: `docker compose up --build`
 4. The backend will be available at `http://localhost:8000` and the frontend at `http://localhost:3000`.
 
 ## Project Structure
